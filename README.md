@@ -16,3 +16,8 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 ## Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+
+https://fundaula-lms.cclearning.accenture.com/mod/scorm/player.php?a=499&currentorg=ORG-E82D9CF88844F89BDC903899130E9DFF&scoid=1124
+
+Herencia https://fundaula-lms.cclearning.accenture.com/contenidosSN/avanza/es/java2_1/content/cont/files/programacion_orientada_a_objetos_parte_1.pdf
