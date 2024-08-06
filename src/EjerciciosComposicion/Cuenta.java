@@ -1,16 +1,18 @@
 package EjerciciosComposicion;
 
+import javax.swing.plaf.synth.SynthScrollPaneUI;
+
 public class Cuenta extends Persona {
     private Persona titularCta;
     private String numeroCta;
-    private double saldoCta;
+    private static double saldoCta;
 
     public Cuenta(String nombreCompleto, String nif, String direccion, Persona titularCta, String numeroCta,
             double saldoCta) {
         super(nombreCompleto, nif, direccion);
         this.titularCta = titularCta;
         this.numeroCta = numeroCta;
-        this.saldoCta = saldoCta;
+        Cuenta.saldoCta = saldoCta;
     }
 
     public Cuenta(){
@@ -38,10 +40,11 @@ public class Cuenta extends Persona {
     }
 
     public void setSaldoCta(double saldoCta) {
-        this.saldoCta = saldoCta;
+        Cuenta.saldoCta = saldoCta;
 
     }
 
+    
     public boolean ingreso(double cantidad) {
         if (cantidad > 0) {
             saldoCta += cantidad;
@@ -60,9 +63,7 @@ public class Cuenta extends Persona {
         }
     }
 
-    // public void transferencia(Cuenta ctaDestino, double cantidad){
-    //      Cuenta.saldoCta += cantidad;
-    // }
+
 
 
     @Override
