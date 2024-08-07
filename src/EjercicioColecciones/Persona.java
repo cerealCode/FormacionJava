@@ -1,6 +1,6 @@
-package ClasesObjetos;
+package EjercicioColecciones;
 
-public class Persona {
+public class Persona implements Comparable <Persona> {
 
 	// Atributos
 	private String nombre;
@@ -9,7 +9,7 @@ public class Persona {
 	private String dni;
 	private int edad;
 
-	// Constructor vac�o
+	// Constructor vacío
 	public Persona() {
 	}
 
@@ -22,7 +22,7 @@ public class Persona {
 		this.edad = p.edad;
 	}
 
-	// Constructor de par�metros
+	// Constructor de parámetros
 	public Persona(String nombre, String primerA, String segundoA, String dni, int edad) {
 		this.nombre = nombre;
 		this.primerApellido = primerA;
@@ -76,6 +76,11 @@ public class Persona {
 		return "Persona [nombre=" + nombre + ", primerApellido=" + primerApellido + ", segundoApellido="
 				+ segundoApellido + ", dni=" + dni + ", edad=" + edad + "]";
 	}
+
+    @Override
+    public compareTo(Persona persona) {
+        return this.edad.compareTo(persona.edad);
+    }
 
 	
 }

@@ -15,13 +15,7 @@ public class Cuenta extends Persona {
         Cuenta.saldoCta = saldoCta;
     }
 
-    public Cuenta(){
-
-    }
-
-    public Persona getTitularCta() {
-        return titularCta;
-    }
+    
 
     public void setTitularCta(Persona titularCta) {
         this.titularCta = titularCta;
@@ -62,9 +56,6 @@ public class Cuenta extends Persona {
             return false;
         }
     }
-
-
-
 
     @Override
     public String toString() {
